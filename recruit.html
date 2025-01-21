@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captz - 3D空間計測のプロフェッショナル</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="高精度3D計測とAI技術で空間のデジタル化を実現。建築設備、工場プラント、文化財まで、あらゆる空間を正確なデジタルデータへ。">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="js/script.js"></script>
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <!-- slickのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-bg"></div>
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Captz-logo.png" alt="Captz-logo">
+                </a>
+            </div>
+            <div class="pc-nav-contact">
+                <nav class="pc-nav">
+                    <ul class="nav-list">
+                        <li><a href="service.html">サービス</a></li>
+                        <li><a href="works.html">実績・事例</a></li>
+                        <li><a href="about.html">企業情報</a></li>
+                        <li><a href="recruit.html">採用情報</a></li>
+                        <li><a href="news.html">お知らせ</a></li>
+                    </ul>
+                    <button class="custom-btn btn">
+                        <a href="contact.html"><span>お問い合わせ</span></a>
+                    </button>
+                </nav>
+            </div>
+
+            <button class="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="sp-nav">
+            <ul class="nav-list">
+                <li><a href="service.html">サービス</a></li>
+                <li><a href="works.html">実績・事例</a></li>
+                <li><a href="about.html">企業情報</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <div class="recruit-hero">
+            <div class="recruit-hero-content">
+                <h1 class="recruit-hero-title">採用情報</h1>
+                <p class="recruit-hero-text">共に空間データの未来を創造する仲間を募集しています</p>
+            </div>
+        </div>
+
+        <!-- Message Section -->
+        <section class="recruit-message fade-in">
+            <div class="container">
+                <div class="message-content">
+                    <h2 class="section-title">Message</h2>
+                    <div class="message-box">
+                        <div class="message-img">
+                            <img src="images/recruit-message.jpg" alt="採用担当メッセージ">
+                        </div>
+                        <div class="message-text">
+                            <h3>技術と創造性で、未来を共に描く</h3>
+                            <p>Captzは、最先端の3D計測技術とAI技術を駆使し、空間データの新しい価値を創造する企業です。私たちは、技術への探究心と創造性を持ち、チャレンジ精神にあふれる仲間を求めています。
+                            </p>
+                            <p>経験やスキルも大切ですが、それ以上に、新しいことに挑戦する意欲や、チームで協力して課題を解決する姿勢を重視しています。</p>
+                            <p>あなたの専門性と情熱を活かし、私たちと共に空間データの未来を創っていきませんか？</p>
+                            <div class="message-sign">
+                                <p>採用担当マネージャー<br>山田 真理子</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Job Positions Section -->
+        <section class="job-positions fade-in" id="newgrad">
+            <div class="container">
+                <h2 class="section-title">募集職種</h2>
+                <div class="positions-grid">
+                    <div class="position-card">
+                        <div class="position-header">
+                            <h3>3Dエンジニア</h3>
+                            <div class="position-tags">
+                                <span class="tag-new">新卒</span>
+                                <span class="tag-career">中途</span>
+                            </div>
+                        </div>
+                        <div class="position-content">
+                            <dl>
+                                <dt>仕事内容</dt>
+                                <dd>3D計測技術を活用した空間データの取得、処理、解析業務</dd>
+                                <dt>必要スキル</dt>
+                                <dd>3D計測、点群処理、CADの基礎知識（実務経験不問）</dd>
+                                <dt>給与</dt>
+                                <dd>年収400万円〜600万円（経験・能力による）</dd>
+                            </dl>
+                            <a href="#" class="detail-btn">詳細を見る</a>
+                        </div>
+                    </div>
+
+                    <div class="position-card">
+                        <div class="position-header">
+                            <h3>アプリケーション開発</h3>
+                            <div class="position-tags">
+                                <span class="tag-career">中途</span>
+                            </div>
+                        </div>
+                        <div class="position-content">
+                            <dl>
+                                <dt>仕事内容</dt>
+                                <dd>点群データ処理システムの開発、クラウドプラットフォームの構築</dd>
+                                <dt>必要スキル</dt>
+                                <dd>Web開発経験3年以上、クラウド環境での開発経験</dd>
+                                <dt>給与</dt>
+                                <dd>年収500万円〜800万円（経験・能力による）</dd>
+                            </dl>
+                            <a href="#" class="detail-btn">詳細を見る</a>
+                        </div>
+                    </div>
+
+                    <div class="position-card">
+                        <div class="position-header">
+                            <h3>営業職</h3>
+                            <div class="position-tags">
+                                <span class="tag-new">新卒</span>
+                                <span class="tag-career">中途</span>
+                            </div>
+                        </div>
+                        <div class="position-content">
+                            <dl>
+                                <dt>仕事内容</dt>
+                                <dd>法人向け営業活動、提案活動、顧客課題のヒアリングと解決提案</dd>
+                                <dt>必要スキル</dt>
+                                <dd>コミュニケーション能力、提案力（業界経験不問）</dd>
+                                <dt>給与</dt>
+                                <dd>年収350万円〜600万円（経験・能力による）</dd>
+                            </dl>
+                            <a href="#" class="detail-btn">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interview Section -->
+        <section class="interview-section fade-in" id="interview">
+            <div class="container">
+                <h2 class="section-title">社員インタビュー</h2>
+                <div class="interview-container">
+                    <div class="interview-card">
+                        <div class="interview-image">
+                            <img src="images/interview3.jpg" alt="社員インタビュー1">
+                        </div>
+                        <div class="interview-content">
+                            <div class="interview-profile">
+                                <h3>技術の可能性を追求する日々</h3>
+                                <p class="profile-info">3Dエンジニア部門<br>入社3年目 田中 健太</p>
+                            </div>
+                            <p class="interview-text">
+                                日々新しい技術に触れ、その可能性を探求できることにやりがいを感じています。特に、文化財のデジタル保存プロジェクトでは、技術で歴史を未来に残すという社会的意義を実感しました。3D計測技術は日進月歩で、常に新しい挑戦があります。プロジェクトごとに異なる課題に直面しますが、チームで知恵を出し合い、解決策を見出していく過程が非常に刺激的です。また、お客様から「このデータのおかげで工期が大幅に短縮できた」といった声をいただくたびに、自分たちの技術が実際の現場で役立っているという実感が湧き、大きなモチベーションになっています。
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="interview-card">
+                        <div class="interview-image">
+                            <img src="images/interview2.jpg" alt="社員インタビュー2">
+                        </div>
+                        <div class="interview-content">
+                            <div class="interview-profile">
+                                <h3>お客様と共に成長する喜び</h3>
+                                <p class="profile-info">営業部門<br>入社2年目 山本 美咲</p>
+                            </div>
+                            <p class="interview-text">
+                                営業として、お客様の課題を理解し、最適なソリューションを提案することにやりがいを感じています。技術の進化と共に、提案できる価値も広がっていくことが魅力です。私たちの仕事は単なる機器の販売ではなく、お客様のビジネスをより良くするためのコンサルティングだと考えています。そのため、技術面の知識も常にアップデートし、エンジニアと密に連携を取りながら提案活動を行っています。特に印象に残っているのは、ある製造業のお客様の工場設備管理を効率化できたケースです。お客様と共に課題を深堀りし、最適なソリューションを提案することで、大幅なコスト削減を実現できました。
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="interview-card">
+                        <div class="interview-image">
+                            <img src="images/interview1.jpg" alt="社員インタビュー3">
+                        </div>
+                        <div class="interview-content">
+                            <div class="interview-profile">
+                                <h3>最先端技術への挑戦</h3>
+                                <p class="profile-info">開発部門<br>入社5年目 佐藤 隆</p>
+                            </div>
+                            <p class="interview-text">
+                                AIと3D技術の統合による新しいソリューション開発に携わっています。日々新しい課題に直面しますが、それを乗り越えた時の達成感は何物にも代えがたいものです。最近は特に点群データの自動認識精度の向上に注力しており、機械学習モデルの改良に取り組んでいます。技術開発の面白さは、理論と実践の両方を追求できることです。研究開発の成果が実際の現場で活用され、お客様の業務改善につながった時は大きな喜びを感じます。また、社内の若手エンジニアの育成にも関わっており、技術的な議論を通じて私自身も日々学ぶことが多く、やりがいを感じています。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Recruitment Process Section -->
+        <section class="process-section fade-in" id="process">
+            <div class="container">
+                <h2 class="section-title">採用プロセス</h2>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>エントリー</h3>
+                            <p>応募フォームより必要情報をご登録ください</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>書類選考</h3>
+                            <p>7日以内に結果をご連絡いたします</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>一次面接</h3>
+                            <p>オンラインにて実施（約1時間）</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>二次面接</h3>
+                            <p>対面にて実施（約1時間）</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">05</div>
+                        <div class="step-content">
+                            <h3>内定</h3>
+                            <p>結果は5日以内にご連絡いたします</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section fade-in" id="faq">
+            <div class="container">
+                <h2 class="section-title">よくある質問</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>未経験でも応募できますか？</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>はい、可能です。特に新卒採用では、経験よりも意欲と可能性を重視しています。入社後の研修制度も充実していますので、安心してご応募ください。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>選考期間はどのくらいですか？</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>エントリーから内定まで、最短で2週間程度です。お急ぎの場合は選考プロセスを調整することも可能ですので、ご相談ください。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>転勤はありますか？</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>原則として、転勤はありません。ただし、プロジェクトによっては一時的な出張が発生する場合があります。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="page-top" class="page-top">
+        <span></span>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/Captz-logo.png" alt="Captz-logo"></a>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-tel">
+                        <p class="tel-label">お電話でのお問い合わせ</p>
+                        <a href="tel:03-1234-5678" class="tel-number">03-1234-5678</a>
+                        <p class="tel-hours">受付時間：平日 9:00-18:00</p>
+                    </div>
+                </div>
+                <a href="contact.html" class="footer-contact-btn custom-btn btn">
+                    <span>お問い合わせ</span>
+                </a>
+            </div>
+        </div>
+    
+        <div class="footer-nav">
+            <div class="nav-content">
+                <div class="nav-section">
+                    <h3><a href="service.html">サービス</a></h3>
+                    <ul>
+                        <li><a href="service.html#measurement">3D計測</a></li>
+                        <li><a href="service.html#data">データ処理</a></li>
+                        <li><a href="service.html#consulting">コンサルティング</a></li>
+                        <li><a href="service.html#flow">導入の流れ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3><a href="works.html">実績・事例</a></h3>
+                    <ul>
+                        <li><a href="works.html#office">オフィスビル</a></li>
+                        <li><a href="works.html#factory">工場設備</a></li>
+                        <li><a href="works.html#cultural">文化財</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3><a href="about.html">企業情報</a></h3>
+                    <ul>
+                        <li><a href="about.html#philosophy-content">企業理念</a></li>
+                        <li><a href="about.html#company-content">会社概要</a></li>
+                        <li><a href="about.html#technology-content">技術基盤</a></li>
+                        <li><a href="about.html#vision-content">事業計画</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3><a href="recruit.html">採用情報</a></h3>
+                    <ul>
+                        <li><a href="recruit.html#newgrad">募集職種</a></li>
+                        <li><a href="recruit.html#interview">社員インタビュー</a></li>
+                        <li><a href="recruit.html#process">採用プロセス</a></li>
+                        <li><a href="recruit.html#faq">よくある質問</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="bottom-content">
+                <div class="policy-link">
+                    <a href="privacy-policy.html">プライバシーポリシー</a>
+                </div>
+                <p class="copyright">© 2024 Captz Corporation</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

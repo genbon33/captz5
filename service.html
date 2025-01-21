@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captz - 3D空間計測のプロフェッショナル</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="高精度3D計測とAI技術で空間のデジタル化を実現。建築設備、工場プラント、文化財まで、あらゆる空間を正確なデジタルデータへ。">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="js/script.js"></script>
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <!-- slickのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-bg"></div>
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Captz-logo.png" alt="Captz-logo">
+                </a>
+            </div>
+            <div class="pc-nav-contact">
+                <nav class="pc-nav">
+                    <ul class="nav-list">
+                        <li><a href="service.html">サービス</a></li>
+                        <li><a href="works.html">実績・事例</a></li>
+                        <li><a href="about.html">企業情報</a></li>
+                        <li><a href="recruit.html">採用情報</a></li>
+                        <li><a href="news.html">お知らせ</a></li>
+                    </ul>
+                    <button class="custom-btn btn">
+                        <a href="contact.html"><span>お問い合わせ</span></a>
+                    </button>
+                </nav>
+            </div>
+
+            <button class="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="sp-nav">
+            <ul class="nav-list">
+                <li><a href="service.html">サービス</a></li>
+                <li><a href="works.html">実績・事例</a></li>
+                <li><a href="about.html">企業情報</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Service Overview -->
+        <div class="service-overview">
+            <div class="overview-content">
+                <h1 class="page-title">サービス紹介</h1>
+                <p class="overview-description">
+                    Captzは、最新の3D計測技術とAI技術を駆使し、空間データの取得から活用まで、<br>
+                    トータルソリューションを提供しています。
+                </p>
+            </div>
+        </div>
+    
+        <!-- Main Services -->
+        <div class="main-services">
+            <!-- 3D計測サービス -->
+            <section class="service-section" id="measurement">
+                <div class="service-header">
+                    <div class="service-title-box">
+                        <span class="service-number">01</span>
+                        <h2>高精度3D計測サービス</h2>
+                    </div>
+                    <div class="service-catch">
+                        精度±2mmの高精度スキャンで、あらゆる空間を正確にデジタル化
+                    </div>
+                </div>
+                
+                <div class="service-detail">
+                    <div class="service-image">
+                        <img src="images/3d-scanning.jpg" alt="3D計測サービスのイメージ">
+                    </div>
+                    <div class="service-content">
+                        <h3>サービス内容</h3>
+                        <ul class="service-features">
+                            <li>建築設備の3Dスキャン</li>
+                            <li>工場・プラント設備の詳細計測</li>
+                            <li>文化財・歴史的建造物のデジタル保存</li>
+                            <li>BIM/CIM向けの現況データ取得</li>
+                        </ul>
+                        <div class="spec-table">
+                            <h4>測定仕様</h4>
+                            <table>
+                                <tr>
+                                    <th>計測精度</th>
+                                    <td>±2mm</td>
+                                </tr>
+                                <tr>
+                                    <th>計測範囲</th>
+                                    <td>0.5m～350m</td>
+                                </tr>
+                                <tr>
+                                    <th>計測速度</th>
+                                    <td>最大100万点/秒</td>
+                                </tr>
+                                <tr>
+                                    <th>出力フォーマット</th>
+                                    <td>PLY, PTX, E57, RCP</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- データ処理・モデリング -->
+            <section class="service-section" id="data">
+                <div class="service-header">
+                    <div class="service-title-box">
+                        <span class="service-number">02</span>
+                        <h2>データ処理・モデリング</h2>
+                    </div>
+                    <div class="service-catch">
+                        AI技術による高速・高精度なデータ処理で、活用までの時間を大幅短縮
+                    </div>
+                </div>
+                
+                <div class="service-detail">
+                    <div class="service-image">
+                        <img src="images/data-processing.jpg" alt="データ処理のイメージ">
+                    </div>
+                    <div class="service-content">
+                        <h3>サービス内容</h3>
+                        <ul class="service-features">
+                            <li>点群データの統合・最適化処理</li>
+                            <li>3次元CADモデルの作成</li>
+                            <li>BIM/CIMデータの構築</li>
+                            <li>クラウドベースのデータ管理</li>
+                        </ul>
+                        <div class="spec-table">
+                            <h4>処理能力</h4>
+                            <table>
+                                <tr>
+                                    <th>対応点群サイズ</th>
+                                    <td>～100億点</td>
+                                </tr>
+                                <tr>
+                                    <th>処理時間</th>
+                                    <td>標準48時間以内</td>
+                                </tr>
+                                <tr>
+                                    <th>対応CAD形式</th>
+                                    <td>DWG, RVT, IFC他</td>
+                                </tr>
+                                <tr>
+                                    <th>データ保管期間</th>
+                                    <td>最大10年</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- コンサルティング -->
+            <section class="service-section" id="consulting">
+                <div class="service-header">
+                    <div class="service-title-box">
+                        <span class="service-number">03</span>
+                        <h2>専門的なコンサルティング</h2>
+                    </div>
+                    <div class="service-catch">
+                        空間データの効果的な活用方法を、実績豊富な専門家がご提案
+                    </div>
+                </div>
+                
+                <div class="service-detail">
+                    <div class="service-image">
+                        <img src="images/consulting.jpg" alt="コンサルティングのイメージ">
+                    </div>
+                    <div class="service-content">
+                        <h3>サービス内容</h3>
+                        <ul class="service-features">
+                            <li>設備更新計画の策定支援</li>
+                            <li>3D計測導入コンサルティング</li>
+                            <li>予防保全計画の立案</li>
+                            <li>デジタルツイン構築支援</li>
+                        </ul>
+                        <div class="spec-table">
+                            <h4>サポート体制</h4>
+                            <table>
+                                <tr>
+                                    <th>対応業種</th>
+                                    <td>製造、建設、不動産他</td>
+                                </tr>
+                                <tr>
+                                    <th>担当者経験</th>
+                                    <td>平均10年以上</td>
+                                </tr>
+                                <tr>
+                                    <th>サポート形態</th>
+                                    <td>訪問・オンライン</td>
+                                </tr>
+                                <tr>
+                                    <th>対応エリア</th>
+                                    <td>全国対応可能</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        <!-- Introduction Flow -->
+        <section class="introduction-flow fade-in fade-bottom" id="flow">
+            <h2 class="section-title">導入の流れ</h2>
+            <div class="flow-container">
+                <div class="flow-item">
+                    <div class="flow-number">STEP 1</div>
+                    <div class="flow-content">
+                        <h3>ヒアリング</h3>
+                        <p>現状の課題や要望をお伺いし、最適なソリューションをご提案します。</p>
+                    </div>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-number">STEP 2</div>
+                    <div class="flow-content">
+                        <h3>現地調査</h3>
+                        <p>計測対象の調査を行い、具体的な計測計画を立案します。</p>
+                    </div>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-number">STEP 3</div>
+                    <div class="flow-content">
+                        <h3>計測実施</h3>
+                        <p>高精度3Dスキャナーによる計測を実施します。</p>
+                    </div>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-number">STEP 4</div>
+                    <div class="flow-content">
+                        <h3>データ処理</h3>
+                        <p>取得データの処理・モデリングを行います。</p>
+                    </div>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-number">STEP 5</div>
+                    <div class="flow-content">
+                        <h3>納品・活用支援</h3>
+                        <p>成果物の納品と活用方法のレクチャーを行います。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Customer Voice -->
+        <section class="customer-voice fade-in fade-bottom">
+            <h2 class="section-title">お客様の声</h2>
+            <div class="voice-container">
+                <div class="voice-card">
+                    <div class="voice-header">
+                        <div class="customer-info">
+                            <p class="customer-type">製造業</p>
+                            <p class="customer-position">設備管理部長</p>
+                        </div>
+                    </div>
+                    <div class="voice-content">
+                        <p>老朽化した工場設備の更新計画に活用しました。3D計測により、図面には記載されていない配管の干渉も事前に把握でき、工期の短縮につながりました。</p>
+                    </div>
+                </div>
+                <div class="voice-card">
+                    <div class="voice-header">
+                        <div class="customer-info">
+                            <p class="customer-type">建設業</p>
+                            <p class="customer-position">工事責任者</p>
+                        </div>
+                    </div>
+                    <div class="voice-content">
+                        <p>リノベーション工事の際に利用しました。現況を正確に把握できたことで、予想外の手戻りが大幅に減少し、予算内での計画遂行が可能になりました。</p>
+                    </div>
+                </div>
+                <div class="voice-card">
+                    <div class="voice-header">
+                        <div class="customer-info">
+                            <p class="customer-type">不動産管理</p>
+                            <p class="customer-position">施設管理課長</p>
+                        </div>
+                    </div>
+                    <div class="voice-content">
+                        <p>複数の商業施設の管理に活用しています。設備の状態を3Dデータで一元管理できるようになり、メンテナンス計画の策定が効率化されました。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Technical Documents -->
+        <section class="technical-docs fade-in fade-bottom">
+            <h2 class="section-title">技術資料</h2>
+            <div class="docs-container">
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <img src="images/pdf-icon.svg" alt="PDF">
+                    </div>
+                    <div class="doc-info">
+                        <h3>3D計測導入ガイド</h3>
+                        <p>3D計測技術の基礎から活用事例まで、詳しく解説しています。</p>
+                        <button class="download-btn">ダウンロード</button>
+                    </div>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <img src="images/pdf-icon.svg" alt="PDF">
+                    </div>
+                    <div class="doc-info">
+                        <h3>データ活用事例集</h3>
+                        <p>様々な業界での活用事例をまとめた資料です。</p>
+                        <button class="download-btn">ダウンロード</button>
+                    </div>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <img src="images/pdf-icon.svg" alt="PDF">
+                    </div>
+                    <div class="doc-info">
+                        <h3>技術仕様書</h3>
+                        <p>3D計測機器の詳細な仕様と性能についての資料です。</p>
+                        <button class="download-btn">ダウンロード</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="page-top" class="page-top">
+        <span></span>
+    </div>
+    
+   
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/Captz-logo.png" alt="Captz-logo"></a>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-tel">
+                        <p class="tel-label">お電話でのお問い合わせ</p>
+                        <a href="tel:03-1234-5678" class="tel-number">03-1234-5678</a>
+                        <p class="tel-hours">受付時間：平日 9:00-18:00</p>
+                    </div>
+                </div>
+                <a href="contact.html" class="footer-contact-btn custom-btn btn">
+                    <span>お問い合わせ</span>
+                </a>
+            </div>
+        </div>
+    
+        <div class="footer-nav">
+            <div class="nav-content">
+                <div class="nav-section">
+                    <h3><a href="service.html">サービス</a></h3>
+                    <ul>
+                        <li><a href="service.html#measurement">3D計測</a></li>
+                        <li><a href="service.html#data">データ処理</a></li>
+                        <li><a href="service.html#consulting">コンサルティング</a></li>
+                        <li><a href="service.html#flow">導入の流れ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3><a href="works.html">実績・事例</a></h3>
+                    <ul>
+                        <li><a href="works.html#office">オフィスビル</a></li>
+                        <li><a href="works.html#factory">工場設備</a></li>
+                        <li><a href="works.html#cultural">文化財</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3><a href="about.html">企業情報</a></h3>
+                    <ul>
+                        <li><a href="about.html#philosophy-content">企業理念</a></li>
+                        <li><a href="about.html#company-content">会社概要</a></li>
+                        <li><a href="about.html#technology-content">技術基盤</a></li>
+                        <li><a href="about.html#vision-content">事業計画</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3><a href="recruit.html">採用情報</a></h3>
+                    <ul>
+                        <li><a href="recruit.html#newgrad">募集職種</a></li>
+                        <li><a href="recruit.html#interview">社員インタビュー</a></li>
+                        <li><a href="recruit.html#process">採用プロセス</a></li>
+                        <li><a href="recruit.html#faq">よくある質問</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="bottom-content">
+                <div class="policy-link">
+                    <a href="privacy-policy.html">プライバシーポリシー</a>
+                </div>
+                <p class="copyright">© 2024 Captz Corporation</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

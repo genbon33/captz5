@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captz - 3D空間計測のプロフェッショナル</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="高精度3D計測とAI技術で空間のデジタル化を実現。建築設備、工場プラント、文化財まで、あらゆる空間を正確なデジタルデータへ。">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="js/script.js"></script>
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <!-- slickのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-bg"></div>
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Captz-logo.png" alt="Captz-logo">
+                </a>
+            </div>
+            <div class="pc-nav-contact">
+                <nav class="pc-nav">
+                    <ul class="nav-list">
+                        <li><a href="service.html">サービス</a></li>
+                        <li><a href="works.html">実績・事例</a></li>
+                        <li><a href="about.html">企業情報</a></li>
+                        <li><a href="recruit.html">採用情報</a></li>
+                        <li><a href="news.html">お知らせ</a></li>
+                    </ul>
+                    <button class="custom-btn btn">
+                        <a href="contact.html"><span>お問い合わせ</span></a>
+                    </button>
+                </nav>
+            </div>
+
+            <button class="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="sp-nav">
+            <ul class="nav-list">
+                <li><a href="service.html">サービス</a></li>
+                <li><a href="works.html">実績・事例</a></li>
+                <li><a href="about.html">企業情報</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+<div class="works-hero">
+    <div class="works-hero-content">
+        <h1 class="works-hero-title">実績・導入事例</h1>
+        <p class="works-hero-text">多様な業界で、空間データの価値を創造しています</p>
+    </div>
+</div>
+
+<!-- Summary Section -->
+<section class="works-summary">
+    <div class="container">
+        <div class="summary-grid">
+            <div class="summary-item">
+                <div class="summary-number">132<span>件</span></div>
+                <div class="summary-label">導入実績</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-number">96<span>%</span></div>
+                <div class="summary-label">顧客満足度</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-number">31<span>%</span></div>
+                <div class="summary-label">平均コスト削減率</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Studies Section -->
+<section class="case-studies">
+    <div class="container">
+        <!-- Case Study 1: Office Building -->
+        <div class="case-study fade-in" id="office">
+            <div class="case-header">
+                <span class="case-category">オフィスビル</span>
+                <h2 class="case-title">大規模オフィスビル群の設備管理システム構築</h2>
+            </div>
+            <div class="case-content">
+                <div class="case-image">
+                    <img src="images/case-office.jpg" alt="オフィスビル設備管理">
+                </div>
+                <div class="case-details">
+                    <div class="case-section">
+                        <h3>課題</h3>
+                        <ul>
+                            <li>既存図面と現況の不一致</li>
+                            <li>作業効率の低下による遅延発生</li>
+                            <li>設備の老朽化によるリスク増大</li>
+                        </ul>
+                    </div>
+                    <div class="case-section">
+                        <h3>解決策</h3>
+                        <ul>
+                            <li>高精度3Dスキャンによる現況把握</li>
+                            <li>クラウドベースのデータ管理システム導入</li>
+                            <li>AI活用による保守計画の最適化</li>
+                        </ul>
+                    </div>
+                    <div class="case-section">
+                        <h3>成果</h3>
+                        <ul>
+                            <li>保守点検の効率30%向上</li>
+                            <li>年間設備メンテナンスコストの大幅削減</li>
+                            <li>設備トラブルの未然防止を実現</li>
+                        </ul>
+                    </div>
+                    <button class="download-btn">
+                        <span>事例詳細PDF</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 16L7 11H17L12 16Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 2: Factory -->
+        <div class="case-study fade-in" id="factory">
+            <div class="case-header">
+                <span class="case-category">工場設備</span>
+                <h2 class="case-title">製造業の工場設備デジタル化プロジェクト</h2>
+            </div>
+            <div class="case-content">
+                <div class="case-image">
+                    <img src="images/case-factory.jpg" alt="工場設備デジタル化">
+                </div>
+                <div class="case-details">
+                    <div class="case-section">
+                        <h3>課題</h3>
+                        <ul>
+                            <li>設備更新時の干渉チェックに時間がかかる</li>
+                            <li>生産ライン稼働率の向上が必要</li>
+                            <li>設備保守の効率化が課題</li>
+                        </ul>
+                    </div>
+                    <div class="case-section">
+                        <h3>解決策</h3>
+                        <ul>
+                            <li>3D計測による設備の完全デジタル化</li>
+                            <li>BIMモデルを活用した設備配置最適化</li>
+                            <li>デジタルツインによる予防保全の実現</li>
+                        </ul>
+                    </div>
+                    <div class="case-section">
+                        <h3>成果</h3>
+                        <ul>
+                            <li>工期を2週間短縮</li>
+                            <li>設備更新の工数25%削減</li>
+                            <li>保守作業の効率化を実現</li>
+                        </ul>
+                    </div>
+                    <button class="download-btn">
+                        <span>事例詳細PDF</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 16L7 11H17L12 16Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 3: Cultural Property -->
+        <div class="case-study fade-in" id="cultural">
+            <div class="case-header">
+                <span class="case-category">文化財</span>
+                <h2 class="case-title">重要文化財の3Dデジタルアーカイブ化</h2>
+            </div>
+            <div class="case-content">
+                <div class="case-image">
+                    <img src="images/case-cultural.jpg" alt="文化財デジタル保存">
+                </div>
+                <div class="case-details">
+                    <div class="case-section">
+                        <h3>課題</h3>
+                        <ul>
+                            <li>経年劣化による形状変化の記録</li>
+                            <li>修復計画立案のための正確なデータ必要</li>
+                            <li>後世への確実な継承方法の確立</li>
+                        </ul>
+                    </div>
+                    <div class="case-section">
+                        <h3>解決策</h3>
+                        <ul>
+                            <li>超高精度3Dスキャンの実施</li>
+                            <li>専用アーカイブシステムの構築</li>
+                            <li>定期的な形状変化の記録と分析</li>
+                        </ul>
+                    </div>
+                    <div class="case-section">
+                        <h3>成果</h3>
+                        <ul>
+                            <li>精密な3Dデータの永久保存を実現</li>
+                            <li>修復計画の精度向上</li>
+                            <li>文化財研究への新しい知見提供</li>
+                        </ul>
+                    </div>
+                    <button class="download-btn">
+                        <span>事例詳細PDF</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 16L7 11H17L12 16Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+ 
+   
+    <div id="page-top" class="page-top">
+        <span></span>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/Captz-logo.png" alt="Captz-logo"></a>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-tel">
+                        <p class="tel-label">お電話でのお問い合わせ</p>
+                        <a href="tel:03-1234-5678" class="tel-number">03-1234-5678</a>
+                        <p class="tel-hours">受付時間：平日 9:00-18:00</p>
+                    </div>
+                </div>
+                <a href="contact.html" class="footer-contact-btn custom-btn btn">
+                    <span>お問い合わせ</span>
+                </a>
+            </div>
+        </div>
+    
+        <div class="footer-nav">
+            <div class="nav-content">
+                <div class="nav-section">
+                    <h3><a href="service.html">サービス</a></h3>
+                    <ul>
+                        <li><a href="service.html#measurement">3D計測</a></li>
+                        <li><a href="service.html#data">データ処理</a></li>
+                        <li><a href="service.html#consulting">コンサルティング</a></li>
+                        <li><a href="service.html#flow">導入の流れ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3><a href="works.html">実績・事例</a></h3>
+                    <ul>
+                        <li><a href="works.html#office">オフィスビル</a></li>
+                        <li><a href="works.html#factory">工場設備</a></li>
+                        <li><a href="works.html#cultural">文化財</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3><a href="about.html">企業情報</a></h3>
+                    <ul>
+                        <li><a href="about.html#philosophy-content">企業理念</a></li>
+                        <li><a href="about.html#company-content">会社概要</a></li>
+                        <li><a href="about.html#technology-content">技術基盤</a></li>
+                        <li><a href="about.html#vision-content">事業計画</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3><a href="recruit.html">採用情報</a></h3>
+                    <ul>
+                        <li><a href="recruit.html#newgrad">募集職種</a></li>
+                        <li><a href="recruit.html#interview">社員インタビュー</a></li>
+                        <li><a href="recruit.html#process">採用プロセス</a></li>
+                        <li><a href="recruit.html#faq">よくある質問</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="bottom-content">
+                <div class="policy-link">
+                    <a href="privacy-policy.html">プライバシーポリシー</a>
+                </div>
+                <p class="copyright">© 2024 Captz Corporation</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
